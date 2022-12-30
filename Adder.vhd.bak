@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+
+ENTITY Adder IS
+PORT( X,Y: IN STD_LOGIC_VECTOR(3 downto 0); 
+		Segment: OUT STD_LOGIC_VECTOR(1 to 14));
+END Adder;
+ 
+ARCHITECTURE ADDER_ARCH OF Adder IS
+	SIGNAL X1,Y1,S1: STD_LOGIC_VECTOR(4 downto 0);
+BEGIN
+X1<= '0' & X;
+Y1 <= '0' & Y;
+S1 <= X1 + Y1;
+	PROCESS(S1)
+	BEGIN 
+		CASE S1 IS                      
+		WHEN "00000" => Segment <= NOT "11111101111110";
+		WHEN "00001" => Segment <= NOT "11111100110000";
+		WHEN "00010" => Segment <= NOT"11111101101101";
+		WHEN "00011" => Segment <= NOT "11111101111001";
+		WHEN "00100" => Segment <= NOT"11111100110011";
+		WHEN "00101" => Segment <= NOT"11111101011011";
+		WHEN "00110" => Segment <= NOT"11111101011111";
+		WHEN "00111" => Segment <= NOT"11111101110000";
+		WHEN "01000" => Segment <= NOT"11111101111111";
+		WHEN "01001" => Segment <= NOT"11111101111011";
+		WHEN "01010" => Segment <= NOT"01100001111110";
+		WHEN "01011" => Segment <= NOT"01100000110000";
+		WHEN "01100" => Segment <= NOT"01100001101101";
+		WHEN "01101" => Segment <= NOT"01100001111001";
+		WHEN "01110" => Segment <= NOT"01100000110011";
+		WHEN "01111" => Segment <= NOT"01100001011011";
+		WHEN "10000" => Segment <= NOT"01100001011111";
+		WHEN "10001" => Segment <= NOT"01100001110000";
+		WHEN "10010" => Segment <= NOT"01100001111111";
+		WHEN "10011" => Segment <= NOT"01100001111011";
+		WHEN "10100" => Segment <= NOT"11011011111110";
+		WHEN "10101" => Segment <= NOT"11011010110000";
+		WHEN "10110" => Segment <= NOT"11011011101101";
+		WHEN "10111" => Segment <= NOT"11011011111001";
+		WHEN "11000" => Segment <= NOT"11011010110011";
+		WHEN "11001" => Segment <= NOT"11011011011011";
+		WHEN "11010" => Segment <= NOT"11011011011111";
+		WHEN "11011" => Segment <= NOT"11011011110000";
+		WHEN "11100" => Segment <= NOT"11011011111111";
+		WHEN "11101" => Segment <= NOT"11011011111011";
+		WHEN "11110" => Segment <= NOT"11110011111110";
+		WHEN OTHERS =>  Segment <= "--------------";
+		END CASE ;
+	END PROCESS ;
+END ADDER_ARCH;

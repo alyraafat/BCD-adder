@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SUM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SUM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SUM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SUM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SUM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Segment[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "X[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "X[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "X[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "X[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
